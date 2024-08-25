@@ -77,20 +77,20 @@ You can evaluate the performance of the finetuned model using the scripts availa
 
 | LMDecoder      | Training Datasets  | Used Language  |  WER(\%)  | Target Directory |
 |--------------|:----------|:------------------:|:----------:|:----------:|
-| [best_ckpt.pt](https://www.dropbox.com/scl/fo/kgnewc4mdvbv6bwoqmsce/AEo0K9qzfEHJh-w1d_4RcWA?rlkey=eqlzu7hqmeb073e6reb5ll2lj&st=czy3x8by&dl=0) |     LRS2 + LRS3      |        English           |     12.6  |  src/pretrained_models/lmdecoder/en   |
-| [best_ckpt.pt](https://www.dropbox.com/scl/fo/owfd12n6f7av9q8q2qj19/AMGG8pYGRhmDZroiiwM3VAs?rlkey=6u4ulsgzfij5rb6nq5g0ypykk&st=i4rdiys5&dl=0) |     mTEDx + MLS      |        Spanish          |  25.1 |   src/pretrained_models/lmdecoder/es        |
-| [best_ckpt.pt](https://www.dropbox.com/scl/fo/m8iatth4tt32fomy137jt/ACO9GAFozbmSm5-VvLKdLR0?rlkey=l2ooxn8tdrfs3f12ccn5e9clw&st=rhxvj51j&dl=0) |       mTEDx + MLS    |        French         |    28.3 | src/pretrained_models/lmdecoder/fr |
-| [best_ckpt.pt](https://www.dropbox.com/scl/fo/ikjt49p0zzqgttale39fh/ACPFAcEO4CIuPFbYPUfRlBw?rlkey=ck1a62zio2c44pa277h5lzckm&st=g4q2pqnb&dl=0) |       mTEDx + MLS    |        Italian         |    29.4  | src/pretrained_models/lmdecoder/it |
-| [best_ckpt.pt](https://www.dropbox.com/scl/fo/dswvp5sn0htw0p7ef4zri/AHOqgShuIKq67vVNmtMs-Uw?rlkey=y67ibqb57mfd6ljlt0k5opzlt&st=ohzqs9fk&dl=0) |       mTEDx + MLS     |        Portuguese         |  37.4  | src/pretrained_models/lmdecoder/pt |
+| [best_ckpt.pt](https://www.dropbox.com/scl/fo/zxnycpjlffd18ok5bg7ob/AKwd8lxvbx_q_BECGnTI2Pc?rlkey=a8f5e8gjan15mmmcgmw1peo0p&st=2hmj185b&dl=0) |     LRS2 + LRS3      |        English           |     12.6  |  src/pretrained_models/lmdecoder/en   |
+| [best_ckpt.pt](https://www.dropbox.com/scl/fo/33tx38c4r2nei64w0jtos/APuYqWYs3Zfl0_xZPdYFddg?rlkey=hsa5hshnl8091zm33w022cpaq&st=8xxgmp1z&dl=0) |     mTEDx + MLS      |        Spanish          |  25.1 |   src/pretrained_models/lmdecoder/es        |
+| [best_ckpt.pt](https://www.dropbox.com/scl/fo/suovlgvi6l73wmdy1b3ik/AMq8VWaZcSW6wZKRmL0mbWk?rlkey=tj9fkw5dgp9s1key2r8j1ikox&st=idrouvm4&dl=0) |       mTEDx + MLS    |        French         |    28.3 | src/pretrained_models/lmdecoder/fr |
+| [best_ckpt.pt](https://www.dropbox.com/scl/fo/zk3js3g02oibqg0a3umzz/AK9-DXffv852RVxmHc3KNv4?rlkey=aeab1jiymxc554v86cec2t7l3&st=9yc68za6&dl=0) |       mTEDx + MLS    |        Italian         |    29.4  | src/pretrained_models/lmdecoder/it |
+| [best_ckpt.pt](https://www.dropbox.com/scl/fo/5mhqya2e5mdddsao4y3oc/AHanr8fswjGV2R5ZJnCNjz4?rlkey=4d45fzubbujq5cbavb5palfmx&st=p8ranvpf&dl=0) |       mTEDx + MLS     |        Portuguese         |  37.4  | src/pretrained_models/lmdecoder/pt |
 
 
 | VSR Model     | Training Datasets  | Used Language  |  WER(\%)  | Target Directory |
 |--------------|:----------|:------------------:|:----------:|:----------:|
-| [best_ckpt.pt](https://www.dropbox.com/scl/fo/kgnewc4mdvbv6bwoqmsce/AEo0K9qzfEHJh-w1d_4RcWA?rlkey=eqlzu7hqmeb073e6reb5ll2lj&st=czy3x8by&dl=0) |     LRS2      |        English           |     23.8  |  src/pretrained_models/lmd_vsr/en   |
-| [best_ckpt.pt](https://www.dropbox.com/scl/fo/owfd12n6f7av9q8q2qj19/AMGG8pYGRhmDZroiiwM3VAs?rlkey=6u4ulsgzfij5rb6nq5g0ypykk&st=i4rdiys5&dl=0) |     mTEDx      |        Spanish          |  70.2 |   src/pretrained_models/lmd_vsr/es        |
-| [best_ckpt.pt](https://www.dropbox.com/scl/fo/m8iatth4tt32fomy137jt/ACO9GAFozbmSm5-VvLKdLR0?rlkey=l2ooxn8tdrfs3f12ccn5e9clw&st=rhxvj51j&dl=0) |       mTEDx    |        French         |    74.7 | src/pretrained_models/lmd_vsr/fr |
-| [best_ckpt.pt](https://www.dropbox.com/scl/fo/ikjt49p0zzqgttale39fh/ACPFAcEO4CIuPFbYPUfRlBw?rlkey=ck1a62zio2c44pa277h5lzckm&st=g4q2pqnb&dl=0) |       mTEDx    |        Italian         |    68.0  | src/pretrained_models/lmd_vsr/it |
-| [best_ckpt.pt](https://www.dropbox.com/scl/fo/dswvp5sn0htw0p7ef4zri/AHOqgShuIKq67vVNmtMs-Uw?rlkey=y67ibqb57mfd6ljlt0k5opzlt&st=ohzqs9fk&dl=0) |       mTEDx     |        Portuguese         |    69.3  | src/pretrained_models/lmd_vsr/pt |
+| [best_ckpt.pt](https://www.dropbox.com/scl/fo/60xihdj518w44ujnixp8p/AKhdf0TxhPL5MLjQLtX8zdc?rlkey=4ddbpecgqlg0rym4z9drkeg4d&st=023giear&dl=0) |     LRS2      |        English           |     23.8  |  src/pretrained_models/lmd_vsr/en   |
+| [best_ckpt.pt](https://www.dropbox.com/scl/fo/fnxbjvrh8tythp2yvlbh5/AMYTkcFRC8RmUIh__25qKKc?rlkey=d9575wmdpfs398z5xhrfxbyof&st=atcbjq0p&dl=0) |     mTEDx      |        Spanish          |  70.2 |   src/pretrained_models/lmd_vsr/es        |
+| [best_ckpt.pt](https://www.dropbox.com/scl/fo/1q1yezdiace2mn3sk4k3n/AIBLHO-5qbqjIa2zPp9_znI?rlkey=ihxcqp27qxy0ejcxnp042rek0&st=8lrb1w2i&dl=0) |       mTEDx    |        French         |    74.7 | src/pretrained_models/lmd_vsr/fr |
+| [best_ckpt.pt](https://www.dropbox.com/scl/fo/jp1cnioc0g37yubtr13gs/AFx9q7OZ0oKGYFJcxqH33E0?rlkey=ufulmw6m04a1vpol22nx7nsy9&st=bk4jltpi&dl=0) |       mTEDx    |        Italian         |    68.0  | src/pretrained_models/lmd_vsr/it |
+| [best_ckpt.pt](https://www.dropbox.com/scl/fo/6fakwmi26c8j9ujhqk4f1/AKrq4fM16AfqxM7zf2alHLM?rlkey=f84vxhdab1y8wnedkj797xjzo&st=bkmjyel0&dl=0) |       mTEDx     |        Portuguese         |    69.3  | src/pretrained_models/lmd_vsr/pt |
 
 
 
