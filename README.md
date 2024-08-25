@@ -43,6 +43,8 @@ We recommend you preprocess the videos following [preparation](https://github.co
 
 
 ## Train
+The train file list can be downloaded [here](https://www.dropbox.com/scl/fo/rom2ht2v6deptaup2q6ek/AIv1Og2C0d9TDGea87xH7Ro?rlkey=146wj786gfhi8hbtzhtskg1rh&st=c8t3p4fk&dl=0).
+
 1. LMDecoder Pre-Training : To evaluate the performance of the LMDecoder, Please run the following command scripts/lmd_eval.sh.
 In this project, we provide only the mTEDx files in the labels directory. To reproduce the same results with this paper, we recommend that you prepare the tsv, wrd, and unit files on the MLS dataset, and merge them with the provided files. 
 ```bash
