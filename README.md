@@ -6,6 +6,8 @@ This repository contains the PyTorch implementation of the following paper:
 > \*Minsu Kim, \*Jeonghun Yeo, Jeongsoo Choi, Yong Man Ro<br>
 > \[[Paper](https://openaccess.thecvf.com/content/ICCV2023/papers/Kim_Lip_Reading_for_Low-resource_Languages_by_Learning_and_Combining_General_ICCV_2023_paper.pdf)\]
 <div align="center"><img width="100%" src="img/img.png?raw=true" /></div>
+
+
 ## Environment Setup
 ```bash
 conda create -n lmd-vsr python=3.9 -y
@@ -21,7 +23,11 @@ pip install numpy==1.23.5 scipy opencv-python
 pip install editdistance python_speech_features einops soundfile sentencepiece tqdm tensorboard unidecode
 pip install omegaconf==2.0.6 hydra-core==1.0.7
 pip install librosa
+cd fairseq
+pip install --editable ./
 ```
+
+
 ## Dataset preparation
 For inference, Multilingual TEDx(mTEDx), and LRS3 Datasets are needed. 
   1. Download the mTEDx dataset from the [mTEDx link](https://www.openslr.org/100) of the official website.
@@ -36,8 +42,6 @@ After downloading the datasets, you should detect the facial landmarks of all vi
 We recommend you preprocess the videos following [preparation](https://github.com/JeongHun0716/lmd-vsr/tree/main/avhubert/preparation).  
 
 
-## Training the Model
-The training code is available soon.
 ## Train
 1. LMDecoder Pre-Training : To evaluate the performance of the LMDecoder, Please run the following command scripts/lmd_eval.sh.
 In this project, we provide only the mTEDx files in the labels directory. To reproduce the same results with this paper, we recommend that you prepare the tsv, wrd, and unit files on the MLS dataset, and merge them with the provided files. 
@@ -85,12 +89,6 @@ You can evaluate the performance of the finetuned model using the scripts availa
 | [best_ckpt.pt](https://www.dropbox.com/scl/fo/m8iatth4tt32fomy137jt/ACO9GAFozbmSm5-VvLKdLR0?rlkey=l2ooxn8tdrfs3f12ccn5e9clw&st=rhxvj51j&dl=0) |       mTEDx    |        French         |    74.7 | src/pretrained_models/lmd_vsr/fr |
 | [best_ckpt.pt](https://www.dropbox.com/scl/fo/ikjt49p0zzqgttale39fh/ACPFAcEO4CIuPFbYPUfRlBw?rlkey=ck1a62zio2c44pa277h5lzckm&st=g4q2pqnb&dl=0) |       mTEDx    |        Italian         |    68.0  | src/pretrained_models/lmd_vsr/it |
 | [best_ckpt.pt](https://www.dropbox.com/scl/fo/dswvp5sn0htw0p7ef4zri/AHOqgShuIKq67vVNmtMs-Uw?rlkey=y67ibqb57mfd6ljlt0k5opzlt&st=ohzqs9fk&dl=0) |       mTEDx     |        Portuguese         |    69.3  | src/pretrained_models/lmd_vsr/pt |
-
-
-| AV-HuBERT Model         | Training Datasets  | Used Language   | Target Directory |
-|--------------|:----------|:------------------:|:----------:|
-| [base_vox_iter5.pt](https://facebookresearch.github.io/av_hubert/) |     LRS3 + VoxCeleb2      |        English         |  src/pretrained_models/encoder   |
-| [large_vox_iter5.pt](https://facebookresearch.github.io/av_hubert/) |     LRS3 + VoxCeleb2      |        English         |   src/pretrained_models/encoder      |
 
 
 
