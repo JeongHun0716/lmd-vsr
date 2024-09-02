@@ -29,13 +29,14 @@ pip install --editable ./
 
 
 ## Dataset preparation
-For inference, Multilingual TEDx(mTEDx), and LRS3 Datasets are needed. 
+For inference, Multilingual TEDx(mTEDx), and LRS2 Datasets are needed. 
   1. Download the mTEDx dataset from the [mTEDx link](https://www.openslr.org/100) of the official website.
   2. Download the LRS2 dataset from the [LRS2 link](https://www.robots.ox.ac.uk/~vgg/data/lip_reading/lrs2.html) of the official website.
 
 
-For training the LMDecoder, Multilingual LibriSpeech (MLS) Dataset is needed.
-  1. Download the MLS dataset from the [MLS link](https://www.openslr.org/94/) of the official website. 
+For training the LMDecoder, Multilingual LibriSpeech (MLS) and LRS3 Datasets are needed.
+  1. Download the MLS dataset from the [MLS link](https://www.openslr.org/94/) of the official website.
+  2. Download the LRS3 dataset from the [LRS3 link](https://mmai.io/datasets/lip_reading/) of the official website.
 
 ## Preprocessing 
 After downloading the datasets, you should detect the facial landmarks of all videos and crop the mouth region using these facial landmarks. 
