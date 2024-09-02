@@ -55,7 +55,7 @@ bash scripts/lmd_pre_train.sh
 
 2. LMD-VSR Training : If you wish to train only the LMD-VSR model, you can use the pre-trained LMDecoder model provided below, which has been trained using the MLS and mTEDx datasets.
 ```bash
-bash scripts/lmd_vsr_train
+bash scripts/lmd_vsr_train.sh
 ```
 
 ## Inference
