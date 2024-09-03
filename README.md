@@ -68,7 +68,6 @@ Download the checkpoints from the below links and move them to the target direct
 You can evaluate the performance of the finetuned model using the scripts available in the `scripts` directory.
 
 
-| Model         | Training Datasets  | Used Language  |  WER(\%)  | Target Directory |
 | AV-HuBERT Model         | Training Datasets  | Used Language   | Target Directory |
 |--------------|:----------|:------------------:|:----------:|
 | [base_vox_iter5.pt](https://facebookresearch.github.io/av_hubert/) |     LRS3 + VoxCeleb2      |        English         |  src/pretrained_models/encoder   |
